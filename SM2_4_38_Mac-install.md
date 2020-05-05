@@ -4,7 +4,7 @@
 - Make sure all $PATH specifications are correct and include directories such /usr/local,...
 - With aprropriate permissions, download the gzipped tarfile for SM (filename: sm2_4_38.tar.gz)
 - Move tarfile to /usr/local directory
-- unzip and untar file
+- Unzip and untar file
 - Execute set_opts code (chmod/sudo for necessary permissions)
 - Open sm2_4_38/Makefile in a text editor and alter the C compiler/flag information as follows:
 
@@ -18,13 +18,13 @@
 - Open src/readcol.c in a text editor and modify the file in the following way:
   above the line where #include <studio.h> is written, insert 
   
-      `#undef _POSIX_C_SOURCE
-      #define _POSIX_C_SOURCE 200112L`
+      #undef _POSIX_C_SOURCE
+      #define _POSIX_C_SOURCE 200112L
       
 - Open src/devices/ttyopen.c in a text editor and alter the file in the following way:   
 
-      `#undef _POSIX_C_SOURCE
-      #define _POSIX_C_SOURCE 200112L`
+      #undef _POSIX_C_SOURCE
+      #define _POSIX_C_SOURCE 200112L
       
 - Run `$make` and `$make install` (sudo permissions enabled)
 - Compilation should occur with no fatal errors
