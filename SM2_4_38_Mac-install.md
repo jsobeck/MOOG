@@ -22,6 +22,7 @@
       #define _POSIX_C_SOURCE 200112L
       
 - Open src/devices/ttyopen.c in a text editor and alter the file in the following way:   
+  above the line where #include <studio.h> is written, insert
 
       #undef _POSIX_C_SOURCE
       #define _POSIX_C_SOURCE 200112L
