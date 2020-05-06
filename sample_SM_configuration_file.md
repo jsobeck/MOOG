@@ -1,5 +1,5 @@
-# Suggestions for .sm (configuration/specification) file for SM/SuperMongo:
-
+## Suggestions for .sm (configuration/specification) file for SM/SuperMongo:
+`
 fonts /usr/local/lib/sm/fonts.bin 
 
 history_file .smhist 
@@ -19,3 +19,4 @@ macro /usr/local/lib/sm/macro/
 prompt SM-> 
 
 TeX_strings 1 name Jenna
+`
