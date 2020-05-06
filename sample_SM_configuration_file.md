@@ -1,10 +1,9 @@
 ## Suggestions for .sm (configuration/specification) file for SM/SuperMongo:
-`
-fonts /usr/local/lib/sm/fonts.bin 
+Might upload actual file, but for now the current version is:
 
-history_file .smhist 
-
-history 980 
+  fonts /usr/local/lib/sm/fonts.bin  
+  history_file .smhist  
+  history 980 
 
 temp_dir /tmp/ 
 
