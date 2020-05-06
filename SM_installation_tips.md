@@ -1,7 +1,7 @@
-# How to install sm2_4_35 (and almost version sm2_4_38) on Mac High Sierra OS
-- Use specialized version of gcc (install via brew install gcc command; gcc base install location: /usr/local/Cellar/gcc/)
-- Download and install X11/X11R6 libraries and associated materials (Xcode,...)
-- Make sure all $PATH specifications are correct and include directories such /usr/local,...
+## Advice regarding the installation of sm2_4_35 (and almost version sm2_4_38) on Mac High Sierra OS
+- Possibly employ specialized version of gcc (install via brew install gcc command; gcc base install location: /usr/local/Cellar/gcc/)
+- Download and install X11/X11R6 libraries and associated materials (Xcode+XQuartz+...)
+- Make sure all $PATH specifications are correct and include relevant directories (e.g., /usr/local,...)
 - With aprropriate permissions, download the gzipped tarfile for SM (filename: sm2_4_38.tar.gz)
 - Move tarfile to /usr/local directory
 - Unzip and untar file
@@ -30,4 +30,4 @@
 - Run `$make` and `$make install` (sudo permissions enabled)
 - Compilation should occur with no fatal errors
 (for the recommendation to do text additions to the files readcol.c and ttyopen.c, a h/t is given to jtmyles)
-(there are still issues with sm2_4_38 and linking to fortran)
+(there are still issues with sm2_4_38 and linking to fortran; sm2_4_38 does compile, however it does not play well with gfortran)
